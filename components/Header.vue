@@ -1,30 +1,26 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Todo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-                </li>
-                <li class="nav-item">
-                    <NuxtLink to="/calendar" class="nav-link">Calendar</NuxtLink>
-
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Todo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <NuxtLink to="/" class="nav-link">Home</NuxtLink>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
-    async fetch() {
-        console.log('in the header');
+  async fetch() {
+    console.log('in the header');
 
-        this.rendering = process.server ? "server" : "client";
-    },
+    this.rendering = process.server ? "server" : "client";
+  },
 }
 </script>

@@ -1,4 +1,14 @@
 .nuxt-link-exact-active {
-    background-color: red;
-    filter: brightness(85%);
+  background-color: #c6b8bf;
+  filter: brightness(85%);
 }
+
+.list-group-item.strike-through {
+  text-decoration: line-through;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: gray;
+}
+
+// $form-check-input-checked-color: $component-secondary-color;
