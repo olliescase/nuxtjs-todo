@@ -10,7 +10,6 @@
       </b-input-group>
     </div>
   </div>
-  </div>
 </template>
 
 <script>
@@ -22,7 +21,6 @@ export default {
   },
   methods: {
     onAdd() {
-      console.log(this.value);
       this.$emit('onAddItem', this.value);
       this.$set(this, 'value', '');
     }

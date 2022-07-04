@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     onToggle() {
-      console.log('here');
       this.$emit('onToggle', this.item);
     },
     onChange() {

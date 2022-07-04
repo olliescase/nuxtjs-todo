@@ -18,8 +18,6 @@
 <script>
 export default {
   async fetch() {
-    console.log('in the header');
-
     this.rendering = process.server ? "server" : "client";
   },
 }
