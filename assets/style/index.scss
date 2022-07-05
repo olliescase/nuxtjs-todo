@@ -3,12 +3,15 @@
   filter: brightness(85%);
 }
 
-.list-group-item.strike-through {
-  text-decoration: line-through;
+.list-group-item.item-done {
+  input {
+    text-decoration: line-through;
+    filter: brightness(80%);
+  }
 }
 
 .custom-control-input:checked~.custom-control-label::before {
   background-color: gray;
 }
 
-// $form-check-input-checked-color: $component-secondary-color;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");

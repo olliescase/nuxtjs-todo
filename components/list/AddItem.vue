@@ -3,9 +3,9 @@
     <div class="input-group p-4 w-25">
       <b-input-group>
         <b-form-input v-model="value" type="text" id="addItemInput" placeholder="Add item to do..."
-          @keyup.enter="this.onAdd"></b-form-input>
+          @keyup.enter="onAdd"></b-form-input>
         <b-input-group-append>
-          <button class="btn btn-success" type="button" @click="this.onAdd">Add</button>
+          <button class="btn btn-success" type="button" @click="onAdd">Add</button>
         </b-input-group-append>
       </b-input-group>
     </div>

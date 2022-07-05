@@ -3,7 +3,7 @@
     <div class="list-group">
       <div v-if="hasItems">
         <div v-for="item in items" :key="item.name">
-          <Item :item="item" @onToggle="toggle(item)" @onChange="update"></Item>
+          <Item :item="item" @onToggle="toggle(item)" @onChange="update" @onRemove="remove"></Item>
         </div>
       </div>
       <div v-else>
@@ -47,6 +47,7 @@ export default {
     ...mapMutations({
       toggle: 'todo/toggle',
       update: 'todo/update',
+      remove: 'todo/remove',
     })
   },
   components: { Item, AddItem },

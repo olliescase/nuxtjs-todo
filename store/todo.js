@@ -1,5 +1,5 @@
 export const state = () => ({
-  list: []
+  list: [],
 })
 
 export const mutations = {
@@ -8,19 +8,24 @@ export const mutations = {
       name,
       done: false
     });
-    state.list.sort((a, b) => Number(a.done) - Number(b.done));
+
+    mutations.sort(state);
   },
   remove(state, { todo }) {
     state.list.splice(state.list.indexOf(todo), 1);
-    state.list.sort((a, b) => Number(a.done) - Number(b.done));
+    mutations.sort(state)
   },
   toggle(state, todo) {
     todo.done = !todo.done
-    state.list.sort((a, b) => Number(a.done) - Number(b.done));
+    mutations.sort(state);
   },
   update(state, { item: todo, name: name }) {
     todo.name = name;
     todo.done = false;
-    state.list.sort((a, b) => Number(a.done) - Number(b.done));
+    mutations.sort(state);
   },
+
+  sort(state) {
+    state.list.sort((a, b) => Number(a.done) - Number(b.done));
+  }
 }

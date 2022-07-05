@@ -16,6 +16,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "bootstrap": "^4.6.1",
+    "bootstrap-icons": "^1.8.3",
     "bootstrap-vue": "^2.21.2",
     "cookie": "^0.5.0",
     "core-js": "^3.19.3",
